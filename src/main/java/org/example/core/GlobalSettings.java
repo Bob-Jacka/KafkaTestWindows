@@ -1,5 +1,9 @@
 package org.example.core;
 
+import org.example.core.factories.ElementsFactory;
+import org.example.core.factories.LayoutFactory;
+import org.example.core.factories.WindowFactory;
+
 public abstract class GlobalSettings {
 
     public static WindowFactory windowFactory = new WindowFactory();

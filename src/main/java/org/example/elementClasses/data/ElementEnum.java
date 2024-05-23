@@ -4,7 +4,10 @@ public enum ElementEnum {
 
     Button(),
     Label(),
-    Frame(),
+    MainFrame(),
+    ConsumerFrame(),
+    ProducerFrame(),
     TextField(),
-    Menu()
+    Menu(),
+    TextArea()
 }

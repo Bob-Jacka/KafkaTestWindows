@@ -1,7 +1,8 @@
-package org.example.core;
+package org.example.core.factories;
 
 import org.example.elementClasses.Button;
 import org.example.elementClasses.Menu;
+import org.example.elementClasses.TextArea;
 import org.example.elementClasses.TextField;
 import org.example.elementClasses.data.ElementEnum;
 
@@ -20,6 +21,8 @@ public class ElementsFactory {
                 return new TextField();
             case Menu:
                 return new Menu();
+            case TextArea:
+                return new TextArea();
         }
         return null;
     }

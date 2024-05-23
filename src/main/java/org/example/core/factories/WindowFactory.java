@@ -1,4 +1,4 @@
-package org.example.core;
+package org.example.core.factories;
 
 import org.example.elementClasses.Frame;
 import org.example.elementClasses.data.ElementEnum;
@@ -9,8 +9,12 @@ public class WindowFactory {
 
     public Frame getElement(ElementEnum elemName) {
         switch (elemName) {
-            case Frame:
+            case MainFrame:
                 return new Frame(700, 700, "MainFrame", JFrame.EXIT_ON_CLOSE);
+            case ConsumerFrame:
+                return new Frame(700, 700, "ConsumerPage", JFrame.HIDE_ON_CLOSE);
+            case ProducerFrame:
+                return new Frame(700, 700, "ProducerPage", JFrame.HIDE_ON_CLOSE);
         }
         return null;
     }
