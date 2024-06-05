@@ -4,9 +4,6 @@ public enum ElementEnum {
 
     Button(),
     Label(),
-    MainFrame(),
-    ConsumerFrame(),
-    ProducerFrame(),
     TextField(),
     Menu(),
     TextArea()

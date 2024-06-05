@@ -26,22 +26,4 @@ public class ElementsFactory {
         }
         return null;
     }
-
-    public static void setAttributes(JComponent component, int width, int height, int x, int y, String text) {
-        component.setBounds(x, y, width, height);
-        component.setToolTipText(text);
-    }
-
-    public static void setAttributes(AbstractButton component, int width, int height, int x, int y, String text) {
-        component.setBounds(x, y, width, height);
-        component.setText(text);
-    }
-
-    public static void setListener(Button component, ActionListener event) {
-        component.addActionListener(event);
-    }
-
-    public static void setListener(TextField component, ActionListener event) {
-        component.addActionListener(event);
-    }
 }
